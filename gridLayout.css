@@ -1,0 +1,129 @@
+.dis_grid_main {
+  /* border: 1px solid; */
+  padding: 2vh 4vw;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 20px;
+  justify-content: center;
+}
+
+.card_grid_main {
+  border-radius: 12px;
+  display: flex;
+  flex-direction: column;
+  gap: 2vh;
+  align-items: center;
+  padding: 2vh 2vw;
+  background: var(--card-bg-color);
+  box-shadow: var(--card-shadow);
+  width: 280px;
+  height: auto;
+  overflow: hidden;
+  transition: transform 0.3s ease-in-out;
+  cursor: pointer;
+  text-decoration: none;
+}
+
+.card_grid_main:hover {
+  transform: scale(1.05);
+}
+
+.card_thumbnail_grid img {
+  width: 100%;
+  height: 200px;
+  object-fit: cover;
+  border-radius: 12px 12px 0 0;
+  box-shadow: 0px 6px 15px rgba(0, 0, 0, 0.3);
+}
+
+.card_details_grid_main {
+  display: flex;
+  flex-direction: column;
+  gap: 1vh;
+}
+
+.book_title {
+  font-family: "Playfair Display", serif;
+  font-size: 18px;
+  font-weight: bold;
+  color: #e4b564;
+  display: flex;
+  gap: 0.5vw;
+  align-items: center;
+}
+
+.publisher {
+  font-size: 15px;
+  font-weight: 500;
+  font-family: "Poppins", sans-serif;
+  color: #c9ada7;
+  display: flex;
+  gap: 0.5vw;
+  align-items: center;
+}
+
+.author {
+  font-size: 17px;
+  font-weight: 600;
+  font-family: "Poppins", sans-serif;
+  color: #0d1b2a;
+  display: flex;
+  gap: 0.5vw;
+  align-items: center;
+}
+
+.published_date {
+  font-size: 14px;
+  font-weight: 600;
+  font-family: "Poppins", sans-serif;
+  color: #777;
+  display: flex;
+  gap: 0.5vw;
+  align-items: center;
+}
+
+
+.book_title i {
+  color: #e4b564;
+  font-size: 18px;
+}
+
+.publisher i {
+  color: #c0a080;
+  font-size: 16px;
+}
+
+.author i {
+  color: #e4b564;
+  font-size: 16px;
+}
+
+.published_date i {
+  color: #e1d5c9;
+  font-size: 15px;
+}
+
+.card_grid_main:hover .book_title {
+  color: #ffd700;
+  transition: color 0.3s ease-in-out;
+}
+
+.card_grid_main:hover .publisher {
+  color: #d2a679;
+  transition: color 0.3s ease-in-out;
+}
+
+.card_grid_main:hover .author {
+  color: #f5deb3;
+  transition: color 0.3s ease-in-out;
+}
+
+.card_grid_main:hover .published_date {
+  color: #e6d8c4;
+  transition: color 0.3s ease-in-out;
+}
+
+.card_grid_main:hover i {
+  transform: scale(1.1);
+  transition: transform 0.3s ease-in-out;
+}
