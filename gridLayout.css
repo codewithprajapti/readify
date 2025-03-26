@@ -82,7 +82,6 @@
   align-items: center;
 }
 
-
 .book_title i {
   color: #e4b564;
   font-size: 18px;
@@ -103,27 +102,36 @@
   font-size: 15px;
 }
 
-.card_grid_main:hover .book_title {
+.card_main:hover .book_title {
   color: #ffd700;
   transition: color 0.3s ease-in-out;
 }
 
-.card_grid_main:hover .publisher {
+.card_main:hover .publisher {
   color: #d2a679;
   transition: color 0.3s ease-in-out;
 }
 
-.card_grid_main:hover .author {
+.card_main:hover .author {
   color: #f5deb3;
   transition: color 0.3s ease-in-out;
 }
 
-.card_grid_main:hover .published_date {
+.card_main:hover .published_date {
   color: #e6d8c4;
   transition: color 0.3s ease-in-out;
 }
 
-.card_grid_main:hover i {
+.card_main:hover i {
   transform: scale(1.1);
   transition: transform 0.3s ease-in-out;
 }
+
+@media (max-width: 600px) {
+  .dis_grid_main {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+}
+

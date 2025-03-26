@@ -8,6 +8,7 @@
 
 .card_list_main {
   display: flex;
+  flex-wrap: wrap;
   align-items: center;
   background: var(--card-bg-color);
   border-radius: 12px;
@@ -16,10 +17,6 @@
   transition: transform 0.3s ease-in-out;
   cursor: pointer;
   text-decoration: none;
-}
-
-.list_grid_main:hover {
-  transform: scale(1.01);
 }
 
 .card_thumbnail_list img {
@@ -35,28 +32,6 @@
   flex-direction: column;
   gap: 2vh;
 }
-
-/* .card_details_list_main h2 {
-  font-size: 20px;
-  font-weight: 700;
-  font-family: "Playfair Display", serif;
-  color: #e4b564;
-}
-
-.card_details_list_main h3,
-h6 {
-  font-size: 14px;
-  font-weight: 400;
-  font-family: "Poppins", sans-serif;
-  color: #777;
-}
-
-.card_details_list_main h4 {
-  font-size: 17px;
-  font-weight: 600;
-  font-family: "Poppins", sans-serif;
-  color: #0d1b2a;
-} */
 
 .book_discription {
   font-size: 15px;

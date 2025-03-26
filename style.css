@@ -36,6 +36,10 @@
   --card-shadow: 0 4px 8px rgba(0, 0, 0, 0.15);
 }
 
+::-webkit-scrollbar {
+  width: 0;
+}
+
 body {
   background: var(--bg-color);
 }
@@ -52,8 +56,8 @@ body {
   display: flex;
   flex-wrap: wrap;
   align-items: center;
-  padding: 2vh 4vw;
-  gap: 3vw;
+  padding: 2vh 2vw;
+  gap: 2vw;
 }
 
 .logo_main img {
@@ -71,11 +75,13 @@ body {
 
 .head_right_main {
   display: flex;
+  gap: 2vw;
+  align-items: center;
 }
 
 .searchbar_main {
   position: relative;
-  width: 250px;
+  width: 230px;
 }
 
 .searchbar_main input {
@@ -100,6 +106,68 @@ body {
   box-shadow: 0 0 8px var(--searchbar-shadow);
   outline: none;
 }
+
+.sorting_main {
+  display: flex;
+  flex-direction: column;
+  gap: 1vh;
+  align-items: center;
+  justify-content: center;
+}
+
+.sorting_main h1{
+
+  font-size: 18px;
+  font-weight: bold;
+  color: #e3b87a;
+  text-shadow: 1px 1px 3px rgba(255,215,0,0.5);
+
+
+}
+
+.sorting_bnts{
+
+  display: flex;
+  gap: 12px;
+  font-size: 14px;
+  color: #e3b87a;
+
+}
+
+.sorting_bnts input[type ="radio"]{
+
+  appearance:  none;
+  width: 16px;
+  height: 16px;
+  border: 2px solid #e3b87a;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  transition: all 0.2s ease-in-out;
+
+}
+
+.sorting_bnts input[type ="radio"]:checked{
+
+  background-color: #e3b87a;
+
+}
+
+.sorting_bnts label{
+
+  cursor: pointer;
+  transition: color 0.2s ease-in-out;
+
+}
+
+.sorting_bnts input[type="radio"]:hover + label{
+
+  color: #f5d999;
+
+}
+
 
 .layout_button_container {
   align-self: flex-end;
@@ -126,6 +194,7 @@ body {
 
 .page_number_main_container {
   display: flex;
+  flex-wrap: wrap;
   justify-content: center;
   align-items: center;
   margin-top: 20px;
@@ -151,8 +220,13 @@ body {
 }
 
 .page_number_main_container button.active {
-  background: #e4b564; 
+  background: #e4b564;
   color: #0d1b2a;
   font-weight: 700;
 }
 
+@media (max-width: 600px) {
+  .logo_main img {
+    width: 40vw;
+  }
+}
