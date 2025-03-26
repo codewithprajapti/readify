@@ -27,6 +27,4 @@ Let's innovate the way we explore books! 📚
 ## 🎥 Live Preview
 Check out the live preview of Readify in action!
 
-![Live Preview](https://yourgifurl.com/live-preview.gif)
-
-🔗 **Live Demo:** [Click here to view Readify](https://yourlivedemolink.com)
+[![Live Preview](https://raw.githubusercontent.com/codewithprajapti/readify/main/utilities/Demo.gif)](https://vubetubeayoutubepage.netlify.app/))
